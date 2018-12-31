@@ -2,10 +2,10 @@
 SpringCloud相关组件（Eureka、Zuul、Ribbon）学习项目
 
 ## 相关源码介绍
-eureka-server:服务注册中心， 监控 `localhost:8761` 进行注册服务和发现服务。
-zuul-api-gateway:API网关， 监听 `localhost:8083` 进行相关API调用。 
-services-node-1:微服务节点1， 直接访问 `localhost:8081/node1/hello` 返回node1节点问候。 
-services-node-2:微服务节点2， 直接访问 `localhost:8082/node2/hey` 返回node2节点问候。
+1. eureka-server:服务注册中心， 监控 `localhost:8761` 进行注册服务和发现服务。
+2. zuul-api-gateway:API网关， 监听 `localhost:8083` 进行相关API调用。 
+3. services-node-1:微服务节点1， 直接访问 `localhost:8081/node1/hello` 返回node1节点问候。 
+4. services-node-2:微服务节点2， 直接访问 `localhost:8082/node2/hey` 返回node2节点问候。
 
 ## 运行方式
 在每一个子源码包中，运行 `mvn clean package` 打包好 `jar` 文件，然后运行 `java -jar *.jar` ， 或者在源码包中运行 `mvn spring-boot:run` ,来启动。<br>
